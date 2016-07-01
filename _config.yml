@@ -1,10 +1,10 @@
 # Site settings
 title: CELEBRATION DAY
-email: ewald.zietsman@gmail.com
+email: nicoladutoit@gmail.com
 url: http://ezietsman,github.io/celebrationday
 description: "Come join us for our celebration day."
-skills: "Rock and roll"
-meta_author: Ewald Zietsman
+skills: "Nicola and Ewald"
+meta_author: Nicola du Toit
 
 # Google webmaster tools
 google_verify:
@@ -24,16 +24,16 @@ disqus_shortname: myshortname
 
 # Color settings (hex-codes without the leading hash-tag)
 color:
-  primary: FFC545
-  primary-rgb: "24,288,156" #"128,179,255"
-  secondary: 444444 #FD6E8A
-  secondary-dark: 2a2a2a #A2122F
+  primary: fece0c
+  primary-rgb:  #"128,179,255"
+  secondary: 2e2f44 #FD6E8A
+  secondary-dark: 019496 #A2122F
 
 # Footer settings
 footer:
-  copyright: The Horn Toads
+  copyright: Nicola & Ewald
   location: Cape Town, South Africa
-  social: Follow us!
+  social: 
   credits: Credits
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
@@ -60,8 +60,7 @@ markdown: kramdown
 permalink: pretty
 
 collections:
- - members
- - gigs
+
 
 gems:
 - jekyll-sitemap
