@@ -48,7 +48,7 @@ hr.star-primary {
 
 hr.star-light:after,
 hr.star-primary:after {
-    content: "\f000";
+    content: "\f1b0";
     display: inline-block;
     position: relative;
     top: -.8em;
@@ -176,6 +176,7 @@ header .intro-text .skills, .row.gig-entry{
 
 section {
     padding: 50px 0;
+    
 }
 
 section h2 {
@@ -188,6 +189,10 @@ section.success {
     background: #{{ site.color.primary }};
 }
 
+section#details, section#gifts {
+    background: #{{ site.color.primary }};   
+}
+
 @media(max-width:767px) {
     section {
         padding: 75px 0;
@@ -198,24 +203,24 @@ section.success {
     }
 }
 
-#members #portfolio .portfolio-item {
+#details  #members #portfolio .portfolio-item {
     right: 0;
     margin: 0 0 15px;
 }
 
-#members #portfolio .portfolio-item .portfolio-link {
+#details  #members #portfolio .portfolio-item .portfolio-link {
     display: block;
     position: relative;
     margin: 0 auto;
     max-width: 400px;
 }
 
-#members #portfolio .portfolio-item .portfolio-link .caption {
+#details #members #portfolio .portfolio-item .portfolio-link .caption {
     position: absolute;
     width: 100%;
     height: 100%;
     opacity: 0;
-    background: rgb({{ site.color.primary-rgb }},.9);
+    background: #{{ site.color.primary }};
     -webkit-transition: all ease .5s;
     -moz-transition: all ease .5s;
     transition: all ease .5s;
@@ -225,7 +230,7 @@ section.success {
     opacity: 1;
 }
 
-#members #portfolio .portfolio-item .portfolio-link .caption .caption-content {
+#details  #members #portfolio .portfolio-item .portfolio-link .caption .caption-content {
     position: absolute;
     top: 50%;
     width: 100%;
@@ -236,21 +241,21 @@ section.success {
     color: #fff;
 }
 
-#members #portfolio .portfolio-item .portfolio-link .caption .caption-content i {
+#details #members #portfolio .portfolio-item .portfolio-link .caption .caption-content i {
     margin-top: -12px;
 }
 
-#members #portfolio .portfolio-item .portfolio-link .caption .caption-content h3,
-#members #portfolio .portfolio-item .portfolio-link .caption .caption-content h4 {
+#details #members #portfolio .portfolio-item .portfolio-link .caption .caption-content h3,
+#details #members #portfolio .portfolio-item .portfolio-link .caption .caption-content h4 {
     margin: 0;
 }
 
-#members #portfolio * {
+#details #members #portfolio * {
     z-index: 2;
 }
 
 @media(min-width:767px) {
-    #members #portfolio .portfolio-item {
+    #details #members #portfolio .portfolio-item {
         margin: 0 0 30px;
     }
 }
@@ -463,3 +468,9 @@ p.centred{
     
     text-align:center;
 }
+
+
+.freebirdFormviewerViewFormBanner{
+    height:178px;
+    background-color: white;
+}   
