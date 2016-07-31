@@ -23,14 +23,14 @@ a:active,
 a.active {
     outline: 0;
     color: #{{ site.color.primary }};
-    
+
 }
 
 a.textlink {
     outline: 0;
     color: #{{ site.color.secondary-dark }};
     text-decoration: underline;
-    
+
 }
 
 h1,
@@ -88,7 +88,7 @@ hr.star-primary:after {
 }
 
 img{
-       
+
 }
 
 img#collieL {
@@ -206,7 +206,7 @@ header .intro-text .skills, .row.gig-entry{
 
 section {
     padding: 50px 0;
-    
+
 }
 
 section h2 {
@@ -220,7 +220,7 @@ section.success {
 }
 
 section#details, section#gifts {
-    background: #{{ site.color.primary }};   
+    background: #{{ site.color.primary }};
 }
 
 @media(max-width:767px) {
@@ -495,7 +495,7 @@ footer .footer-below {
 }
 /*------CUSTOM STUFF HERE--------*/
 p.centred{
-    
+
     text-align:center;
 }
 
@@ -503,4 +503,8 @@ p.centred{
 .freebirdFormviewerViewFormBanner{
     height:178px;
     background-color: white;
-}   
+}
+
+div.content {
+    display: none;
+}

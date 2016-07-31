@@ -1,0 +1,27 @@
+<div class="col-md-4">
+    <form id='pwform' class="form-inline">
+        <div class="form-group">
+            <label for="exampleInputName2">Please enter the password we included in the email</label>
+            <input type="password" class="form-control" id="exampleInputName2" placeholder="Password here...">
+
+        </div>
+        <button id="pwbutton" type="submit" class="btn btn-default">Submit Password</button>
+    </form>
+</div>
+
+
+<script type="text/javascript">
+    window.onload = function() {
+        $('#pwform').on('submit', function(event) {
+            event.preventDefault();
+            var input = $('#exampleInputName2').val();
+            if (md5(input) == '486c6b1fd7cb2f9d63a61a02b6da53b9'){
+                $('#pwform').hide();
+                $('div.content').show();
+            }
+            else {
+                alert("Wrong!");
+            }
+        });
+    }
+</script>
