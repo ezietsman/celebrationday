@@ -44,6 +44,15 @@ h6 {
     font-weight: 700;
 }
 
+h1#security{
+   margin-top:50px; 
+}
+
+label, button, input{
+   font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+
+}
+
 hr.star-light,
 hr.star-primary {
     margin: 40px auto 30px;
@@ -155,6 +164,8 @@ header .intro-text .skills, .row.gig-entry{
     header .intro-text .skills {
         font-size: 1.75em;
     }
+    
+
 }
 
 @media(min-width:768px) {
@@ -180,6 +191,14 @@ header .intro-text .skills, .row.gig-entry{
         font-size: 1.5em;
     }
 }
+
+/*@media screen and (min-width:499px) and (max-width:1025px){
+    input#exampleInputName2{
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    }
+}*/
 
 .navbar {
     text-transform: uppercase;
@@ -364,6 +383,24 @@ form .row:first-child .floating-label-form-group {
     border-top: 1px solid #eee;
 }
 
+form{
+    text-align:center;   
+}
+button#pwbutton{
+    margin-top:10px;  
+     background-color: #{{ site.color.secondary }};
+        border: 2px solid #2e2f44;
+    box-shadow: 2px 1px 3px rgba(0,0,0,0.25);
+}
+
+button#pwbutton:hover{
+   
+     background-color: #{{ site.color.secondary-dark }};
+}
+input#exampleInputName2{
+    border:2px solid #{{ site.color.secondary }};
+    
+}
 footer {
     color: #fff;
 }

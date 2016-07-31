@@ -1,26 +1,35 @@
-<div class="col-md-4">
+<div class="col-md-12 text-center">
+    
     <form id='pwform' class="form-inline">
-        <div class="form-group">
-            <label for="exampleInputName2">Please enter the password we included in the email</label>
-            <input type="password" class="form-control" id="exampleInputName2" placeholder="Password here...">
+        <div class="form-group col-lg-12 text-center">
+            <h1 id="security">Nicola and Ewald's Celebration Day</h1>
+    
+            <img class="img-responsive" style="max-width:300px; margin-left:auto; margin-right:auto;" src="img/zeppelin.png" alt=""><br/>
+            <label for="exampleInputName2">Please enter the password we included in your invitation to access the site.</label>
+            <br/>
+            <input type="password" class="form-control" id="exampleInputName2" placeholder="Enter password here...">
 
         </div>
-        <button id="pwbutton" type="submit" class="btn btn-default">Submit Password</button>
+        <br/>
+        <button id="pwbutton" type="submit" class="btn btn-default">Submit</button>
     </form>
 </div>
 
 
 <script type="text/javascript">
     window.onload = function() {
+        $("body").css("background-color","#fece0c");
+        
         $('#pwform').on('submit', function(event) {
             event.preventDefault();
             var input = $('#exampleInputName2').val();
             if (md5(input) == '486c6b1fd7cb2f9d63a61a02b6da53b9'){
                 $('#pwform').hide();
                 $('div.content').show();
+                $("body").css("background-color","white");
             }
             else {
-                alert("Wrong!");
+                alert("Wrong password. Please try again.");
             }
         });
     }
