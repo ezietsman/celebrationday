@@ -18,7 +18,7 @@
 
 <script type="text/javascript">
     window.onload = function() {
-        $("body").css("background-color","#fece0c");
+        
         
         $('#pwform').on('submit', function(event) {
             event.preventDefault();
@@ -26,7 +26,7 @@
             if (md5(input) == '486c6b1fd7cb2f9d63a61a02b6da53b9'){
                 $('#pwform').hide();
                 $('div.content').show();
-                $("body").css("background-color","white");
+                
             }
             else {
                 alert("Wrong password. Please try again.");
