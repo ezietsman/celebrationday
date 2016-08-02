@@ -53,6 +53,10 @@ p#security{
     font-size: 39px;
 }
 
+div#securityhead{
+    padding:0px;
+}
+
 label, button, input{
    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 
