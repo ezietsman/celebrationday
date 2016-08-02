@@ -44,8 +44,12 @@ h6 {
     font-weight: 700;
 }
 
-h1#security{
+p#security{
    margin-top:50px; 
+   text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    text-align:center;
 }
 
 label, button, input{
