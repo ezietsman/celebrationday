@@ -173,7 +173,7 @@ header .intro-text .skills, .row.gig-entry{
     header .intro-text .skills {
         font-size: 1.75em;
     }
-    
+
 
 }
 
@@ -393,7 +393,7 @@ form .row:first-child .floating-label-form-group {
 }
 
 form{
-    text-align:center;   
+    text-align:center;
 }
 button#pwbutton{
      margin-top:10px;
@@ -403,12 +403,12 @@ button#pwbutton{
 }
 
 button#pwbutton:hover{
-   
+
      background-color: #{{ site.color.secondary-dark }};
 }
 input#exampleInputName2{
     border:2px solid #{{ site.color.secondary }};
-    
+
 }
 footer {
     color: #fff;
@@ -553,4 +553,9 @@ p.centred{
 
 div.content {
     display: none;
+}
+
+a[href^=tel] {
+    color: inherit;
+    text-decoration: none;
 }
